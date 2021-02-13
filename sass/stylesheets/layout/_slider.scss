@@ -1,0 +1,113 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.slider__tabs {
+    display: flex;
+    .card__body {
+        border-bottom: 2px solid $light-grey;
+        border-left: 2px solid $light-grey;
+        border-right: 2px solid $light-grey;
+        border-bottom-left-radius: 6px;
+        border-bottom-right-radius: 6px;
+        padding: 20px 30px;
+    }
+    .card__image  {
+        border-top-left-radius: 6px;
+        border-top-right-radius: 6px;
+    }
+}
+.slider__info-wrapper {
+    justify-content: center;
+    h1,h3 {
+        @media (max-width: 991.98px)  { 
+            text-align: center;
+         }
+    }
+
+}
+.nav-tabs {
+    flex-wrap: nowrap;
+    .nav-link {
+        color: $secondary-blue;
+        border-bottom: 2px solid $blue;
+        &:hover {
+            border-color: $white $white $blue;
+        }
+    }
+    .nav-link.active {
+        border-color: $white $white $blue;
+        color: $dark-grey;
+    }
+}
+
+
+
+
+
+
+// tooltip 
+
+
+
+
+
+.slick-previous {
+    font-family:"Font Awesome 5 Brands";
+    content: "";
+    background-image: url(/images/left.svg);
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    z-index: 99;
+    background-repeat: no-repeat;
+    background-size: 50px;
+    top: 30%;
+    left: -70px;
+    opacity: 0.4;
+
+    &:hover {
+        background-image: url(/images/blueleft.png);
+        opacity: 1;
+    }
+    
+}
+.slick-next {
+    content: "";
+    background-image: url(/images/right.svg);
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    z-index: 99;
+    background-repeat: no-repeat;
+    position: absolute;    
+    right: -120px;
+    background-size: 50px;
+    top: 30%;
+    opacity: 0.4;
+    &:hover {
+        background-image: url(/images/blueright.png);
+        opacity: 1;
+    }
+}
+
+.slick-slide {
+    outline: none
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

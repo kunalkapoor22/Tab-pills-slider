@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "../washington_drupal"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "specbee"
+	}
+}
